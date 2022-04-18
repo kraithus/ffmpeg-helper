@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <title>Map Audio to Video</title>
+        <nav>
+            <li>Faux - Nav</li>
+            <a href="index.html"><li>Normal</li></a>
+            <a href="map_aud_to_vid.html"><li>MATV</li></a>
+        </nav>
+    </head>
+    <body>
+        <form action="aud_trim.php" method="POST">
+            <h4>Audio</h4>
+            <input type="text" name="audio_name" placeholder="audio name">
+            <h4>Input Extension</h4>
+            <select name="input_extension">
+                <option value=".mp3">mp3</option>
+                <option value=".mp4">mp4</option>
+                <option value=".mkv">mkv</option>
+            </select>         
+            <h4>Output Audio ext.</h4>
+            <select name="audio_extension">
+                <option value=".mp3">mp3</option>
+                <option value=".wav">wav</option>
+            </select>  
+            <h4>Start Time</h4>
+            <input name="start_time" placeholder="start time"> 
+            <h4>Duration</h4>
+            <input name="duration" placeholder="duration">
+            <h4>Output Name</h4> 
+            <input name="output_name" placeholder="output name">   
+            <button type="submit">Ike!</button><br><br>
+            <button type="reset">Resteo!</button>
+        </form>
+    </body>
+</html>

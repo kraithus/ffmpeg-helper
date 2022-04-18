@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <title>CROP DESIRED</title>
+        <nav>
+            <li>Faux - Nav</li>
+            <a href="index.html"><li>Normal</li></a>
+            <a href="audio_trim.html"><li>Aud Trim</li></a>
+            <a href="map_aud_to_vid.html"><li>MATV</li></a>
+        </nav>
+    </head>
+    <body>
+        <form action="cropdesired.php" method="GET">
+            <h4>Video Name</h4>
+            <input name="input_name">
+            <h4>Video Extension</h4>
+            <select name="video_extension">
+                <option value=".mp4">mp4</option>
+                <option value=".mkv">mkv</option>
+            </select>
+            <h4>Video Width</h4>
+            <select name="vid_width">
+                <option value="2400">2400</option>
+                <option value="1920">1920</option>
+                <option value="1280">1280</option>
+                <option value="854">854</option>
+            </select>
+            <h3>Manual Width</h3>
+            <input name="manual_width" value="0">            
+            <h4>Video Height</h4>
+            <select name="vid_height">
+                <option value="1080">1080</option>
+                <option value="720">720</option>
+                <option value="480">480</option>
+            </select>
+            <h3>Manual Height</h3>
+            <input name="manual_height" value="0">
+            <h4>New Width</h4>
+            <input name="new_width" value="0">
+            <h4>New Height</h4>
+            <input name="new_height">
+            <button type="submit">Ike!</button><br><br>
+            <button type="reset">Resteo!</button>
+        </form>
+    </body>
+</html>

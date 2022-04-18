@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <head>
+        <title>Peg It!</title>
+        <nav>
+            <li>Faux - Nav</li>
+            <a href="map_aud_to_vid.html"><li>MATV</li></a>
+            <a href="audio_trim.html"><li>Aud Trim</li></a>
+            <a href="crop_video.html"><li>Crop Video</li></a>
+            <a href="tiktok_crop.html"><li>Tik Tok</li></a>
+            <a href="cropdesired.html"><li>Desired Crop</li></a>
+        </nav>
+    </head>
+    <body>
+        <form action="gen.php" method="POST">
+            <h4>Input File Name</h4>
+            <input type="text" name="input_file" placeholder="Input File Name">
+            <h4>Extension</h4>
+            <select name="extension">
+                <option value=".mp4">mp4</option>
+                <option value=".mkv">mkv</option>
+            </select>
+            <h4>Start Time</h4>
+            <input type="text" name="start_time" placeholder="Start Time">
+            <h4>End Time</h4>
+            <input type="text" name="end_time" placeholder="End Time">
+            <h4>Duration</h4>
+            <input type="text" name="duration" placeholder="Duration">
+            <h4>Out File Name</h4>
+            <input type="text" name="out_file" placeholder="OutPut File Name">
+            <button type="submit">Ike!</button><br><br>
+            <button type="reset">Reseto!</button>
+        </form>
+    </body>
+</html>
